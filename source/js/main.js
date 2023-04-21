@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // тени от цены
 
-  for (let j = 0; membershipsTypeListArray.length > j; j++ ) {
+  for (let j = 0; membershipsTypeListArray.length > j; j++) {
     let membershipsCardsArray = membershipsTypeListArray[j].querySelectorAll('li');
 
     for (let i = 0; membershipsCardsArray.length > i; i++) {

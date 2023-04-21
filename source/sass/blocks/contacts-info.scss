@@ -2,18 +2,18 @@
   width: 100%;
   min-height: 337px;
   background-color: $color-default-white;
-  padding: 70px 120px;
+  padding: 56px 61px 26px 110px;
   position: relative;
 }
 
 .contacts-info::after {
   position: absolute;
   content: "";
-  top: 150px;
-  left: 350px;
+  top: 164px;
+  left: 354px;
   width: 1px;
-  height: 120px;
-  background-color: #74819C;
+  height: 102px;
+  background-color: #74819c;
 }
 
 
@@ -24,17 +24,17 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
-  margin: 0;
+  margin: 0 0 37px 10px;
 }
 
 .contacts-info ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 14px;
   display: grid;
   grid-template-columns: 170px 170px;
   column-gap: 120px;
-  row-gap: 30px;
+  row-gap: 18px;
 }
 
 .contacts-info span {
@@ -44,7 +44,7 @@
   line-height: 24px;
   color: $color-sapphire;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 }
 
 .contacts-info address,

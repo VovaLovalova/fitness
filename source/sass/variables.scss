@@ -7,8 +7,6 @@ $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
-
-
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
@@ -23,8 +21,8 @@ $color-black-russian:                 #030a1a;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-roboto:                         'Roboto Condensed', "Arial", sans-serif;
-$ff-alumni:                         'Alumni Sans', "Arial", sans-serif;
+$ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
+$ff-alumni:                         "Alumni Sans", "Arial", sans-serif;
 
 // Viewports
 // ---------------------------------
@@ -32,4 +30,3 @@ $ff-alumni:                         'Alumni Sans', "Arial", sans-serif;
 $vp-320:                            320px;
 $vp-768:                            768px;
 $vp-1200:                           1200px;
-

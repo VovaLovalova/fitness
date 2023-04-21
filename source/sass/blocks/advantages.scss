@@ -10,7 +10,7 @@
   max-width: 1366px;
   width: 100%;
   min-height: 104px;
-  padding: 97px 164px;
+  padding: 97px 183px 109px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
-  margin: 0;
+  margin: 0 0 52px 10px;
 }
 
 .advantages__list {
@@ -32,9 +32,9 @@
   padding: 0;
   position: relative;
   display: grid;
-  grid-template-columns: 340px 340px;
+  grid-template-columns: 1fr 1fr;
   column-gap: 360px;
-  row-gap: 165px;
+  row-gap: 137px;
 }
 
 .advantages__item {
@@ -48,7 +48,7 @@
   font-size: 22px;
   line-height: 33px;
   color: $color-sapphire;
-  margin: 0;
+  margin: -4px 0 6px;
 }
 
 .advantages__item p {
@@ -66,9 +66,10 @@
   font-size: 71px;
   line-height: 55px;
   margin: 0;
-  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   color: transparent;
   background-clip: text;
+  margin-bottom: 4px;
 }
 
 .advantages__item span {
@@ -88,20 +89,36 @@
 
 .advantages__item--main {
   position: absolute;
-  top: 2px;
-  left: 396px;
+  top: 3px;
+  left: 381px;
   width: 240px;
   height: 307px;
-  padding: 65px 34px;
+  padding: 63px 34px;
   background-color: $color-sapphire;
   flex-direction: column;
   align-items: center;
+  gap: 0;
+}
+
+.advantages__item--main b {
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 55px;
+  color: $color-default-white;
+}
+
+.advantages__item--main h4 {
+  margin: -4px 0 31px;
+  font-size: 26px;
+  line-height: 39px;
+  color: $color-default-white;
 }
 
 .advantages__item--main::before {
   content: "";
   position: absolute;
-  top: 148px;
+  top: 154px;
   left: -400px;
   width: 340px;
   height: 2px;
@@ -111,17 +128,11 @@
 .advantages__item--main::after {
   content: "";
   position: absolute;
-  top: 148px;
+  top: 154px;
   left: 300px;
   width: 340px;
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
-}
-
-.advantages__item--main h4 {
-  font-size: 26px;
-  line-height: 39px;
-  color: $color-default-white;
 }
 
 .advantages__item--main p {
@@ -129,11 +140,4 @@
   line-height: 24px;
   color: $color-default-white;
   text-align: center;
-}
-
-.advantages__item--main b {
-  font-weight: 700;
-  font-size: 74px;
-  line-height: 55px;
-  color: $color-default-white;
 }
