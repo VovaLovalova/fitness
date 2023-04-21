@@ -1,0 +1,94 @@
+.memberships-card {
+  width: 360px;
+  min-height: 448px;
+  padding: 57px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-default-white;
+  z-index: 2;
+  position: relative;
+  border: 7px solid transparent;
+}
+
+.memberships-card:hover {
+  border: 7px solid #D10A42;
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-slice: 1;
+}
+
+.memberships-card h3 {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: $color-sapphire;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.memberships-card h4 {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-chambray;
+  margin: 0;
+  margin-bottom: 66px;
+}
+
+.memberships-card__price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.memberships-card p {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $color-egyptian-blue;
+  margin: 0;
+}
+
+.memberships-card span {
+  position: absolute;
+  top: -54px;
+  left: auto;
+  right: auto;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: #E8E8E8;
+  opacity: 0.48;
+  z-index: -1;
+  user-select: none;
+}
+
+.memberships-card a {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-sapphire;
+  border: 2px solid $color-sapphire;
+  background-color: transparent;
+  width: 206px;
+  padding: 24px 40px;
+  user-select: none;
+}
+
+.memberships-card:hover a {
+  color: $color-default-white;
+  border: 2px solid transparent;
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+}

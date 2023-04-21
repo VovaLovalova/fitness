@@ -1,0 +1,21 @@
+.navigation {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.navigation a {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+.navigation a:hover {
+  color: $color-egyptian-blue;
+}

@@ -9,20 +9,32 @@
 // ---------------------------------
 
 @import "variables";
-@import "mixins";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/about";
+@import "blocks/memberships";
+@import "blocks/memberships-card";
+@import "blocks/promo";
+@import "blocks/super-games";
+@import "blocks/coaches";
+@import "blocks/coaches-card";
+@import "blocks/advantages";
+@import "blocks/promotion";
+@import "blocks/feedback";
+@import "blocks/feedback-card";
+@import "blocks/contacts";
+@import "blocks/contacts-form";
+@import "blocks/contacts-info";
+@import "blocks/footer";
+@import "blocks/navigation";
+@import "blocks/social";
 
 // ---------------------------------
 

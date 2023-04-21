@@ -1,0 +1,19 @@
+.promo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-default-white;
+  z-index: -1;
+}
+
+.promo__container {
+  max-width: 1366px;
+  width: 100%;
+  min-height: 104px;
+  padding: 120px 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}

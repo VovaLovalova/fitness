@@ -9,6 +9,15 @@
 
 @font-face {
   font-display: swap;
+  font-family: 'Alumni Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/AlumniSans-ExtraBold.woff2') format('woff2'),
+       url('../fonts/AlumniSans-ExtraBold.woff') format('woff')
+}
+
+@font-face {
+  font-display: swap;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 300;

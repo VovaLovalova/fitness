@@ -1,0 +1,139 @@
+.advantages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-ghost-white;
+}
+
+.advantages__container {
+  max-width: 1366px;
+  width: 100%;
+  min-height: 104px;
+  padding: 97px 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages h2 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 340px 340px;
+  column-gap: 360px;
+  row-gap: 165px;
+}
+
+.advantages__item {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages__item h4 {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.advantages__item p {
+  font-family: $ff-roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.advantages__item b {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 55px;
+  margin: 0;
+  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  color: transparent;
+  background-clip: text;
+}
+
+.advantages__item span {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2e35ac;
+  margin: 0;
+}
+
+.advantages__number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.advantages__item--main {
+  position: absolute;
+  top: 2px;
+  left: 396px;
+  width: 240px;
+  height: 307px;
+  padding: 65px 34px;
+  background-color: $color-sapphire;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item--main::before {
+  content: "";
+  position: absolute;
+  top: 148px;
+  left: -400px;
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+.advantages__item--main::after {
+  content: "";
+  position: absolute;
+  top: 148px;
+  left: 300px;
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+.advantages__item--main h4 {
+  font-size: 26px;
+  line-height: 39px;
+  color: $color-default-white;
+}
+
+.advantages__item--main p {
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-default-white;
+  text-align: center;
+}
+
+.advantages__item--main b {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 55px;
+  color: $color-default-white;
+}

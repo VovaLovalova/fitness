@@ -1,0 +1,62 @@
+.contacts-info {
+  width: 100%;
+  min-height: 337px;
+  background-color: $color-default-white;
+  padding: 70px 120px;
+  position: relative;
+}
+
+.contacts-info::after {
+  position: absolute;
+  content: "";
+  top: 150px;
+  left: 350px;
+  width: 1px;
+  height: 120px;
+  background-color: #74819C;
+}
+
+
+.contacts-info h2 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.contacts-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 170px 170px;
+  column-gap: 120px;
+  row-gap: 30px;
+}
+
+.contacts-info span {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-sapphire;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contacts-info address,
+.contacts-info p,
+.contacts-info a {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-sapphire;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
