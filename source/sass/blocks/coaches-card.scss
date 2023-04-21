@@ -1,12 +1,28 @@
+.coaches__card-wrapper {
+  position: relative;
+}
+
+.coaches__card-wrapper:hover .coaches-card,
+.coaches__card-wrapper:focus .coaches-card {
+  z-index: 2;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.coaches__card-wrapper:hover span,
+.coaches__card-wrapper:focus span {
+  display: none;
+}
+
 .coaches-card {
   width: 260px;
   height: 294px;
-  padding: 58px 40px;
+  padding: 52px 40px;
   background-color: $color-sapphire;
   color: $color-default-white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .coaches-card h4 {
@@ -14,8 +30,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 -4px;
 }
 
 .coaches-card p {
@@ -24,8 +39,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #b6bdcc;
-  margin: 0;
-  margin-bottom: 45px;
+  margin: 0 0 33px;
 }
 
 .coaches-card ul {
@@ -33,7 +47,27 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 0 0 31px;
   padding: 0;
   list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.coaches-card__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coaches-card__cover span {
+  position: absolute;
+  bottom: 22px;
+  left: 69px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
 }

@@ -856,7 +856,7 @@ button,
   max-width: 1366px;
   width: 100%;
   min-height: 104px;
-  padding: 120px 103px;
+  padding: 120px 103px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,7 +1076,7 @@ button,
   max-width: 1366px;
   width: 100%;
   min-height: 104px;
-  padding: 120px 103px;
+  padding: 120px 103px 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1107,8 +1107,12 @@ button,
 
 .super-games__details {
   position: absolute;
-  top: 85px;
-  left: 324px;
+  top: 80px;
+  left: 329px;
+}
+
+.super-games__date {
+  margin-bottom: 18px;
 }
 
 .super-games h2 {
@@ -1117,8 +1121,8 @@ button,
   font-size: 82px;
   line-height: 79px;
   letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 0 30px 13px;
+  text-transform: uppercase;
 }
 
 .super-games h4 {
@@ -1127,17 +1131,25 @@ button,
   font-size: 18px;
   line-height: 27px;
   margin: 0;
+  margin-bottom: 5px;
   position: relative;
 }
 
-.super-games h4::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.super-games__date-text,
+.super-games__time-text {
+  border-top: 2px solid #ffffff;
+}
+
+.super-games__date-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
   width: 64px;
-  height: 2px;
-  background-color: #ffffff;
+}
+
+.super-games__date-text span {
+  max-width: 40px;
 }
 
 .super-games p {
@@ -1145,8 +1157,7 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  margin: 0;
-  margin-bottom: 55px;
+  margin: 0 0 44px;
 }
 
 .super-games span {
@@ -1160,7 +1171,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
-  line-height: 60px;
+  line-height: 44px;
 }
 
 .super-games a {
@@ -1172,7 +1183,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   display: block;
-  padding: 29px 108px;
+  padding: 25px 108px;
   border: 4px solid #ffffff;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1188,6 +1199,10 @@ button,
 
 .super-games a:active {
   background-color: #103aae;
+}
+
+.super-games__image {
+  background-color: #102654;
 }
 
 .coaches {
@@ -1217,9 +1232,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .coaches h2 {
@@ -1230,6 +1242,7 @@ button,
   letter-spacing: 0.03em;
   color: #102654;
   margin: 0;
+  margin-bottom: 48px;
 }
 
 .coaches__list {
@@ -1242,10 +1255,25 @@ button,
   gap: 40px;
 }
 
+.coaches__card-wrapper {
+  position: relative;
+}
+
+.coaches__card-wrapper:hover .coaches-card,
+.coaches__card-wrapper:focus .coaches-card {
+  z-index: 2;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.coaches__card-wrapper:hover span,
+.coaches__card-wrapper:focus span {
+  display: none;
+}
+
 .coaches-card {
   width: 260px;
   height: 294px;
-  padding: 58px 40px;
+  padding: 52px 40px;
   background-color: #102654;
   color: #ffffff;
   display: -webkit-box;
@@ -1258,6 +1286,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .coaches-card h4 {
@@ -1265,8 +1294,7 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 -4px;
 }
 
 .coaches-card p {
@@ -1275,8 +1303,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #b6bdcc;
-  margin: 0;
-  margin-bottom: 45px;
+  margin: 0 0 33px;
 }
 
 .coaches-card ul {
@@ -1284,9 +1311,34 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 0 0 31px;
   padding: 0;
   list-style-type: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.coaches-card__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coaches-card__cover span {
+  position: absolute;
+  bottom: 22px;
+  left: 69px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
 }
 
 .advantages {
