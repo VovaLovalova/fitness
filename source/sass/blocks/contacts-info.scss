@@ -60,3 +60,8 @@
   padding: 0;
   display: block;
 }
+
+.contacts-info a:focus {
+  outline: 4px solid $color-egyptian-blue;
+  border-radius: 4px;
+}

@@ -753,6 +753,11 @@ button,
   left: 563px;
 }
 
+.header__title a:focus {
+  outline: 4px solid #103aae;
+  border-radius: 4px;
+}
+
 .main {
   width: 100%;
   -webkit-box-flex: 1;
@@ -946,6 +951,15 @@ button,
   padding-bottom: 11px;
 }
 
+.memberships__period-item:hover {
+  color: #103aae;
+}
+
+.memberships__period-item:focus {
+  outline: 4px solid #103aae;
+  border-radius: 4px;
+}
+
 .memberships__period-item--active {
   color: #102654;
   border-bottom: 2px solid #d10a42;
@@ -1080,6 +1094,11 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.memberships-card a:focus {
+  outline: 4px solid #103aae;
+  border-radius: 4px;
 }
 
 .memberships-card:hover a {
@@ -1757,6 +1776,16 @@ button,
   width: 68px;
 }
 
+.promotion a:focus {
+  outline: 4px solid #103aae;
+  border-radius: 4px;
+}
+
+.promotion a:hover {
+  color: #103aae;
+  border-bottom: 2px solid #103aae;
+}
+
 .feedback {
   width: 100%;
   display: -webkit-box;
@@ -1940,6 +1969,11 @@ form input {
   color: #ffffff;
 }
 
+form input:focus {
+  outline: 4px solid #103aae;
+  border-radius: 4px;
+}
+
 form input::-webkit-input-placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -2046,6 +2080,11 @@ form input::placeholder {
   display: block;
 }
 
+.contacts-info a:focus {
+  outline: 4px solid #103aae;
+  border-radius: 4px;
+}
+
 .footer {
   width: 100%;
   display: -webkit-box;
@@ -2074,6 +2113,11 @@ form input::placeholder {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 43px 103px 32px;
+}
+
+.footer a:focus {
+  outline: 4px solid #103aae;
+  border-radius: 4px;
 }
 
 .navigation {

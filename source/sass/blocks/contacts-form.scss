@@ -64,6 +64,11 @@ form input {
   color: $color-default-white;
 }
 
+form input:focus {
+  outline: 4px solid $color-egyptian-blue;
+  border-radius: 4px;
+}
+
 form input::placeholder {
   font-family: $ff-roboto;
   font-weight: 400;

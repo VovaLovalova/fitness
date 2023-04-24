@@ -64,11 +64,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   let about = document.querySelector('.about__container');
   let playButton = about.querySelector('.about__play-button');
+  let video = document.querySelector('#video');
 
-  let onPlayButtonClick = function () {
-    document.querySelector('#video').remove();
-    playButton.removeEventListener('click', onPlayButtonClick);
-
+  let insertIframe = function () {
+    video.remove();
     let iframe = document.createElement('iframe');
     iframe.classList.add('about__video');
     iframe.setAttribute('width', 364);
@@ -79,7 +78,20 @@ window.addEventListener('DOMContentLoaded', () => {
     about.appendChild(iframe);
   };
 
+  let onPlayButtonClick = function () {
+    playButton.removeEventListener('click', onPlayButtonClick);
+    insertIframe();
+  };
+
+  let onPlayButtonKeydown = function (e) {
+    if (e.keyCode === 13) {
+      playButton.removeEventListener('keydown', onPlayButtonKeydown);
+      insertIframe();
+    }
+  };
+
   playButton.addEventListener('click', onPlayButtonClick);
+  playButton.addEventListener('keydown', onPlayButtonKeydown);
 
   // Utils
   // ---------------------------------

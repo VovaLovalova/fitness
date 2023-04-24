@@ -14,3 +14,8 @@
   justify-content: space-between;
   padding: 43px 103px 32px;
 }
+
+.footer a:focus {
+  outline: 4px solid $color-egyptian-blue;
+  border-radius: 4px;
+}

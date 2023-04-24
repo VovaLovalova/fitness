@@ -59,6 +59,15 @@
   padding-bottom: 11px;
 }
 
+.memberships__period-item:hover {
+  color: $color-egyptian-blue;
+}
+
+.memberships__period-item:focus {
+  outline: 4px solid $color-egyptian-blue;
+  border-radius: 4px;
+}
+
 .memberships__period-item--active {
   color: $color-sapphire;
   border-bottom: 2px solid #d10a42;
