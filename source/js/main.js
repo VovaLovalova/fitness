@@ -60,6 +60,26 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // ВИДЕО
+
+  let about = document.querySelector('.about__container');
+  let playButton = about.querySelector('.about__play-button');
+
+  let onPlayButtonClick = function () {
+    document.querySelector('#video').remove();
+    playButton.removeEventListener('click', onPlayButtonClick);
+
+    let iframe = document.createElement('iframe');
+    iframe.classList.add('about__video');
+    iframe.setAttribute('width', 364);
+    iframe.setAttribute('height', 228);
+    iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/9TZXsZItgdw?autoplay=1');
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.setAttribute('frameborder', 0);
+    about.appendChild(iframe);
+  };
+
+  playButton.addEventListener('click', onPlayButtonClick);
 
   // Utils
   // ---------------------------------
