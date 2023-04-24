@@ -13,6 +13,7 @@
   padding: 120px 103px 120px 163px;
   display: flex;
   column-gap: 85px;
+  position: relative;
 }
 
 .about__info {
@@ -57,3 +58,13 @@
   color: $color-sapphire;
   margin: 0;
 }
+
+.about__video {
+  position: absolute;
+  top: 408px;
+  left: 540px;
+  width: 364px;
+  height: 228px;
+  border: 1px solid black;
+}
+

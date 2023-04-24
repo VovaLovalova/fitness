@@ -5,7 +5,6 @@ import {Form} from './modules/form-validate/form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // КАРТОЧКИ АБОНЕМЕНТОВ
 
   // табы
