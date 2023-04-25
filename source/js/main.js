@@ -1,10 +1,75 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
+
+import Swiper, { Navigation } from 'swiper';
+
+Swiper.use([Navigation]);
+
+
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+
+  // СЛАЙДЕР ТРЕНЕРЫ
+  let swiperCoaches = new Swiper('.coaches__swiper', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 40,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.coaches__swiper-button-next',
+      prevEl: '.coaches__swiper-button-prev',
+    },
+  });
+
+  const coachesPrev = document.querySelector('.coaches__swiper-button-prev');
+  const coachesNext = document.querySelector('.coaches__swiper-button-next');
+
+  coachesPrev.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+      swiperCoaches.slidePrev();
+    }
+  });
+  coachesNext.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+      swiperCoaches.slideNext();
+    }
+  });
+
+  // СЛАЙДЕР ОТЗЫВЫ
+  let swiperFeedback = new Swiper('.feedback__swiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 40,
+    loop: false,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.feedback__swiper-button-next',
+      prevEl: '.feedback__swiper-button-prev',
+    },
+  });
+
+
+  const feedbackPrev = document.querySelector('.feedback__swiper-button-prev');
+  const feedbackNext = document.querySelector('.feedback__swiper-button-next');
+
+  feedbackPrev.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+      swiperFeedback.slidePrev();
+    }
+  });
+  feedbackNext.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+      swiperFeedback.slideNext();
+    }
+  });
+
+
   // КАРТОЧКИ АБОНЕМЕНТОВ
 
   // табы

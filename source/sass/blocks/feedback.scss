@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .feedback h2 {
@@ -29,4 +30,42 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.feedback__swiper {
+  width: 560px;
+  height: 242px;
+}
+
+.feedback__swiper-button-prev,
+.feedback__swiper-button-next {
+  position: absolute;
+  top: 45%;
+  width: 27px;
+  height: 51px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback__swiper-button-prev:focus,
+.feedback__swiper-button-next:focus {
+  outline: 3px solid $color-egyptian-blue;
+  border-radius: 4px;
+}
+
+.feedback__swiper-button-prev:hover,
+.feedback__swiper-button-next:hover {
+  outline: 3px solid $color-egyptian-blue;
+  border-radius: 4px;
+}
+
+.feedback__swiper-button-prev {
+  left: 343px;
+}
+
+.feedback__swiper-button-next {
+  right: 343px;
 }

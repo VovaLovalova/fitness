@@ -13,6 +13,7 @@
   padding: 0 103px 140px 103px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .coaches h2 {
@@ -30,6 +31,42 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.coaches__swiper {
+  width: 1160px;
+  height: 294px;
+}
+
+.coaches__swiper-button-prev,
+.coaches__swiper-button-next {
+  position: absolute;
+  top: 44%;
+  width: 27px;
+  height: 51px;
+  background-color: transparent;
+  cursor: pointer;
   display: flex;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.coaches__swiper-button-prev:focus,
+.coaches__swiper-button-next:focus {
+  outline: 3px solid $color-egyptian-blue;
+  border-radius: 4px;
+}
+
+.coaches__swiper-button-prev:hover,
+.coaches__swiper-button-next:hover {
+  outline: 3px solid $color-egyptian-blue;
+  border-radius: 4px;
+}
+
+.coaches__swiper-button-prev {
+  left: 47px;
+}
+
+.coaches__swiper-button-next {
+  right: 47px;
 }
