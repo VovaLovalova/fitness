@@ -97,3 +97,16 @@
   border: 2px solid transparent;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
+
+@media (max-width: $vp-tablet) {
+  .memberships-card {
+    min-width: 442px;
+    min-height: 448px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {
+
+}
+

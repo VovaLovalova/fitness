@@ -6,8 +6,6 @@ import Swiper, { Navigation } from 'swiper';
 
 Swiper.use([Navigation]);
 
-
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,14 +13,30 @@ window.addEventListener('DOMContentLoaded', () => {
   // СЛАЙДЕР ТРЕНЕРЫ
   let swiperCoaches = new Swiper('.coaches__swiper', {
     // Optional parameters
-    slidesPerView: 4,
-    spaceBetween: 40,
     loop: true,
 
     // Navigation arrows
     navigation: {
       nextEl: '.coaches__swiper-button-next',
       prevEl: '.coaches__swiper-button-prev',
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      // when window width is >= 1366px
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
     },
   });
 
@@ -51,6 +65,24 @@ window.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: '.feedback__swiper-button-next',
       prevEl: '.feedback__swiper-button-prev',
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      // when window width is >= 1366px
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
     },
   });
 

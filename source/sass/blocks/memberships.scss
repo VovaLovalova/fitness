@@ -24,8 +24,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 0 0 18px;
 }
 
 .memberships__period-list {
@@ -88,4 +87,41 @@
   right: -9px;
   bottom: -176px;
   z-index: 0;
+}
+
+@media (max-width: $vp-tablet) {
+  .memberships {
+    min-height: 500px;
+  }
+
+  .memberships__container {
+    min-width: 768px;
+    padding: 100px 163px;
+  }
+
+  .memberships h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .memberships__period-item {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .memberships__period-list::after {
+    top: 38px;
+    width: 315px;
+  }
+
+  .memberships__type-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {
+
 }

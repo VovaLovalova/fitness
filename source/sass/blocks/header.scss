@@ -120,3 +120,74 @@
   outline: 4px solid $color-egyptian-blue;
   border-radius: 4px;
 }
+
+@media (max-width: $vp-tablet) {
+  .header {
+    min-height: 554px;
+  }
+
+  .header img {
+    width: 324px;
+    height: 390px;
+  }
+
+  .header__container {
+    min-width: 768px;
+    padding: 40px 45px;
+  }
+
+  .header__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 4%;
+  }
+
+  .header__container picture {
+    position: static;
+  }
+
+  .header__title {
+    margin-bottom: 25px;
+  }
+
+  .header__title svg {
+    width: 82px;
+    height: 17px;
+  }
+
+  .header__title span {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
+  .header__info {
+    position: static;
+  }
+
+  .header__info h1 {
+    font-size: 72px;
+    line-height: 86px;
+  }
+
+  .header__info span {
+    font-size: 34px;
+    margin: 0;
+  }
+
+  .header__info ul {
+    top: 228px;
+    left: 26px;
+  }
+
+  .header__info a {
+    padding: 20px 28px;
+    width: 183px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {
+
+}

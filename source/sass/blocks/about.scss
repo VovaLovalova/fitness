@@ -34,9 +34,7 @@
   line-height: 58px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
-  margin: 0;
-  margin-top: 39px;
-  margin-bottom: 7px;
+  margin: 39px 0 7px;
 }
 
 .about b {
@@ -89,5 +87,60 @@
 .about__play-button:hover,
 .about__play-button:focus {
   outline: 7px solid $color-ghost-white;
+}
+
+@media (max-width: $vp-tablet) {
+  .about {
+    min-height: 854px;
+  }
+
+  .about__container {
+    min-width: 768px;
+    padding: 100px 45px 183px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__info {
+    max-width: 502px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .about h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .about__text--mobile-hidden {
+    display: none;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .about__video {
+    width: 266px;
+    height: 167px;
+    top: auto;
+    bottom: 100px;
+    left: calc(50% - 133px);
+  }
+
+  .about__play-button {
+    width: 73px;
+    height: 73px;
+    top: 47px;
+    left: 96px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {
+
 }
 
