@@ -141,3 +141,49 @@
   color: $color-default-white;
   text-align: center;
 }
+
+
+@media (max-width: $vp-tablet) {
+  .advantages__container {
+    min-width: 768px;
+    padding: 100px 45px;
+  }
+
+  .advantages h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    column-gap: 50px;
+    row-gap: 340px;
+  }
+
+  .advantages__item--main::before,
+  .advantages__item--main::after {
+    display: none;
+  }
+
+  .advantages__item--main {
+    top: 134px;
+    left: calc(50% - 442px/2);
+    width: 442px;
+    height: 239px;
+  }
+
+  .advantages__item b {
+    font-size: 58px;
+  }
+
+  .advantages__item--main b {
+    font-size: 74px;
+  }
+
+  .advantages__item h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {}

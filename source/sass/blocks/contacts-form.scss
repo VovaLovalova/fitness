@@ -76,3 +76,28 @@ form input::placeholder {
   line-height: 16px;
   color: $color-default-white;
 }
+
+@media (max-width: $vp-tablet) {
+  .contacts form {
+    min-height: 324px;
+    padding: 70px 163px 70px 133px;
+  }
+
+  form h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .contacts-form__inputs {
+    width: 100%;
+    max-width: 100%;
+    column-gap: 60px;
+  }
+
+  form input {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {}

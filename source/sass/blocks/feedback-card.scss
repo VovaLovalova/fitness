@@ -30,3 +30,12 @@
   color: $color-default-white;
   margin: 0;
 }
+
+@media (max-width: $vp-tablet) {
+  .feedback-card {
+    width: 566px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {}

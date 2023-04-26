@@ -69,3 +69,30 @@
 .feedback__swiper-button-next {
   right: 343px;
 }
+
+@media (max-width: $vp-tablet) {
+  .feedback__container {
+    min-width: 768px;
+    padding: 100px 45px;
+  }
+
+  .feedback h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .feedback__swiper {
+    width: 566px;
+  }
+
+  .feedback__swiper-button-prev {
+    left: 35px;
+  }
+
+  .feedback__swiper-button-next {
+    right: 35px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {}

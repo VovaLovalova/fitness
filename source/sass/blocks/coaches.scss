@@ -23,8 +23,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
-  margin: 0;
-  margin-bottom: 48px;
+  margin: 0 0 48px;
 }
 
 .coaches__list {
@@ -69,4 +68,26 @@
 
 .coaches__swiper-button-next {
   right: 47px;
+}
+
+@media (max-width: $vp-tablet) {
+  .coaches__container {
+    min-width: 768px;
+    padding: 100px 45px;
+    align-items: center;
+  }
+
+  .coaches__swiper {
+    width: 566px;
+  }
+
+  .coaches h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {
+
 }

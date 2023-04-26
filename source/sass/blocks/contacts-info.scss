@@ -65,3 +65,33 @@
   outline: 4px solid $color-egyptian-blue;
   border-radius: 4px;
 }
+
+@media (max-width: $vp-tablet) {
+  .contacts-info {
+    min-height: 324px;
+    padding: 70px 163px 70px 133px;
+  }
+
+  .contacts-info h2 {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    color: $color-sapphire;
+    margin: 0 0 37px;
+  }
+
+  .contacts-info span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts-info address,
+  .contacts-info p,
+  .contacts-info a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {}

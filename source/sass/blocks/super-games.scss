@@ -5,7 +5,7 @@
 
 .super-games__info {
   width: 500px;
-  max-height: 500px;
+  height: 500px;
   background-color: $color-torch-red;
   padding: 85px 78px;
   position: relative;
@@ -107,7 +107,53 @@
 }
 
 @media (max-width: $vp-tablet) {
+  .super-games h2 {
+    font-size: 48px;
+    line-height: 46px;
+    margin: 0 0 30px;
+  }
 
+  .super-games p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 10px;
+  }
+
+  .super-games h4 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .super-games strong {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .super-games span {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .super-games a {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 16px 47px;
+  }
+
+  .super-games__info {
+    width: 292px;
+    height: 292px;
+    padding: 51px 45px;
+  }
+
+  .super-games picture {
+    width: 386px;
+  }
+
+  .super-games__details {
+    top: 30px;
+    left: 187px;
+  }
 }
 
 

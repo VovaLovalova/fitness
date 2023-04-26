@@ -19,3 +19,12 @@
 .navigation a:hover {
   color: $color-egyptian-blue;
 }
+
+@media (max-width: $vp-tablet) {
+  .navigation {
+    gap: 30px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {}

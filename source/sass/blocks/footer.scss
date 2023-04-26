@@ -19,3 +19,13 @@
   outline: 4px solid $color-egyptian-blue;
   border-radius: 4px;
 }
+
+@media (max-width: $vp-tablet) {
+  .footer__container {
+    min-width: 768px;
+    padding: 47px 45px;
+  }
+}
+
+
+@media (max-width: $vp-mobile) {}
