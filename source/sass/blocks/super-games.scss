@@ -158,5 +158,23 @@
 
 
 @media (max-width: $vp-mobile) {
+  .super-games {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .super-games__info {
+    width: 290px;
+  }
+
+  .super-games picture {
+    width: 290px;
+    height: 292px;
+  }
+
+  .super-games img {
+    width: 290px;
+    height: 292px;
+    object-fit: cover;
+  }
 }

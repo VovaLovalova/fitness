@@ -38,4 +38,29 @@
 }
 
 
-@media (max-width: $vp-mobile) {}
+@media (max-width: $vp-mobile) {
+  .feedback-card {
+    width: 226px;
+    height: 335px;
+    position: relative;
+    padding: 40px 25px;
+  }
+
+  .feedback-card h4 {
+    margin-left: 94px;
+    margin-bottom: 34px;
+    line-height: 26px;
+  }
+
+  .feedback-card p {
+    text-align: center;
+  }
+
+  .feedback-card img {
+    height: 68px;
+    width: 68px;
+    position: absolute;
+    top: 40px;
+    left: 41px;
+  }
+}

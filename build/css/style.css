@@ -3092,6 +3092,10 @@ form input::placeholder {
   color: #103aae;
 }
 
+.navigation__mobile-logo {
+  display: none;
+}
+
 .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3607,5 +3611,475 @@ form input::placeholder {
 
   .navigation {
     gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    min-height: 490px;
+  }
+
+  .header img {
+    display: none;
+  }
+
+  .header__container {
+    min-width: 320px;
+    padding: 15px;
+  }
+
+  .header__title svg {
+    width: 69px;
+    height: 24px;
+  }
+
+  .header__title span {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .header__info span {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .header__info a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .header__info ul {
+    top: 186px;
+    left: 10px;
+  }
+
+  .about__container {
+    min-width: 320px;
+    padding: 70px 0 40px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .about__image {
+    margin-bottom: 50px;
+    height: 313px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: right;
+    object-position: right;
+  }
+
+  .about__video {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: auto;
+  }
+
+  .about__play-button {
+    top: 47px;
+    left: 124px;
+  }
+
+  .memberships__container {
+    min-width: 320px;
+    padding: 70px 15px;
+  }
+
+  .memberships h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .memberships__period-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .memberships__period-list::after {
+    top: 35px;
+    width: 290px;
+  }
+
+  .memberships picture {
+    display: none;
+  }
+
+  .memberships-card {
+    width: 100%;
+    min-width: 290px;
+    min-height: 384px;
+  }
+
+  .memberships-card h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .memberships-card p {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .memberships-card span {
+    font-size: 80px;
+    line-height: 120px;
+    top: -44px;
+  }
+
+  .promo__container {
+    min-width: 320px;
+    padding: 70px 15px;
+  }
+
+  .super-games {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .super-games__info {
+    width: 290px;
+  }
+
+  .super-games picture {
+    width: 290px;
+    height: 292px;
+  }
+
+  .super-games img {
+    width: 290px;
+    height: 292px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .coaches__container {
+    min-width: 320px;
+    padding: 70px 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .coaches__swiper {
+    width: 226px;
+  }
+
+  .coaches h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .coaches__swiper-button-prev {
+    left: 15px;
+  }
+
+  .coaches__swiper-button-next {
+    right: 15px;
+  }
+
+  .coaches__swiper-button-prev,
+  .coaches__swiper-button-next {
+    top: 52%;
+  }
+
+  .coaches-card {
+    width: 226px;
+    height: 274px;
+    padding: 34px 20px;
+  }
+
+  .coaches-card__cover {
+    width: 226px;
+    height: 274px;
+  }
+
+  .coaches-card__cover img {
+    width: 226px;
+    height: 274px;
+  }
+
+  .advantages__container {
+    min-width: 320px;
+    padding: 70px 0;
+  }
+
+  .advantages h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    row-gap: 50px;
+  }
+
+  .advantages__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages__item--main {
+    position: static;
+    min-height: 239px;
+    height: auto;
+    width: 100%;
+  }
+
+  .advantages__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages__number {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages__item p {
+    max-width: 227px;
+    text-align: center;
+  }
+
+  .promotion__container {
+    min-width: 320px;
+    padding: 70px 15px;
+  }
+
+  .promotion h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .promotion__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .promotion__1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 290px;
+    height: 598px;
+  }
+
+  .promotion__1-info {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 290px;
+  }
+
+  .promotion__1-info p {
+    text-align: center;
+  }
+
+  .promotion__1-info span,
+  .promotion__1-info b {
+    display: block;
+    text-align: center;
+  }
+
+  .promotion__1 img {
+    width: 290px;
+    height: 299px;
+  }
+
+  .promotion__2,
+  .promotion__3 {
+    width: 290px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .promotion__2 h4,
+  .promotion__3 h4,
+  .promotion__2 p,
+  .promotion__3 p {
+    text-align: center;
+  }
+
+  .feedback__container {
+    min-width: 320px;
+    padding: 70px 15px;
+  }
+
+  .feedback h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .feedback__swiper {
+    width: 226px;
+    height: 335px;
+  }
+
+  .feedback-card {
+    width: 226px;
+    height: 335px;
+    position: relative;
+    padding: 40px 25px;
+  }
+
+  .feedback-card h4 {
+    margin-left: 94px;
+    margin-bottom: 34px;
+    line-height: 26px;
+  }
+
+  .feedback-card p {
+    text-align: center;
+  }
+
+  .feedback-card img {
+    height: 68px;
+    width: 68px;
+    position: absolute;
+    top: 40px;
+    left: 41px;
+  }
+
+  .contacts__container {
+    min-width: 320px;
+  }
+
+  .contacts form {
+    min-height: 386px;
+    padding: 70px 15px;
+  }
+
+  form h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .contacts-form__inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .contacts-info {
+    min-height: 324px;
+    padding: 70px 15px;
+  }
+
+  .contacts-info h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .contacts-info::after {
+    display: none;
+  }
+
+  .contacts-info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .footer__container {
+    min-width: 320px;
+    padding: 50px 15px 52px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .navigation li {
+    width: 130px;
+    margin-bottom: 30px;
+  }
+
+  .navigation__mobile-logo {
+    display: block;
+  }
+
+  .navigation__mobile-logo svg {
+    width: 68px;
+    height: 15px;
   }
 }

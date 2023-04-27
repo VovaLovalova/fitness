@@ -100,4 +100,25 @@ form input::placeholder {
 }
 
 
-@media (max-width: $vp-mobile) {}
+@media (max-width: $vp-mobile) {
+  .contacts form {
+    min-height: 386px;
+    padding: 70px 15px;
+  }
+
+  form h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .contacts-form__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}

@@ -105,6 +105,25 @@
 
 
 @media (max-width: $vp-mobile) {
+  .memberships-card {
+    width: 100%;
+    min-width: 290px;
+    min-height: 384px;
+  }
 
+  .memberships-card h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .memberships-card p {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .memberships-card span {
+    font-size: 80px;
+    line-height: 120px;
+    top: -44px;
+  }
 }
-

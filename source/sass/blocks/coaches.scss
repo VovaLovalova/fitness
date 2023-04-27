@@ -89,5 +89,31 @@
 
 
 @media (max-width: $vp-mobile) {
+  .coaches__container {
+    min-width: 320px;
+    padding: 70px 15px;
+    align-items: center;
+  }
 
+  .coaches__swiper {
+    width: 226px;
+  }
+
+  .coaches h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .coaches__swiper-button-prev {
+    left: 15px;
+  }
+
+  .coaches__swiper-button-next {
+    right: 15px;
+  }
+
+  .coaches__swiper-button-prev,
+  .coaches__swiper-button-next {
+    top: 52%;
+  }
 }

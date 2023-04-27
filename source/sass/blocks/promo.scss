@@ -19,7 +19,6 @@
 }
 
 @media (max-width: $vp-tablet) {
-
   .promo__container {
     min-width: 768px;
     padding: 100px 45px;
@@ -28,5 +27,8 @@
 
 
 @media (max-width: $vp-mobile) {
-
+  .promo__container {
+    min-width: 320px;
+    padding: 70px 15px;
+  }
 }

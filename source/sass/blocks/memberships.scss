@@ -95,7 +95,6 @@
   }
 
   .memberships__container {
-
     min-width: 768px;
     padding: 100px 163px;
   }
@@ -124,5 +123,27 @@
 
 
 @media (max-width: $vp-mobile) {
+  .memberships__container {
+    min-width: 320px;
+    padding: 70px 15px;
+  }
 
+  .memberships h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .memberships__period-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .memberships__period-list::after {
+    top: 35px;
+    width: 290px;
+  }
+
+  .memberships picture {
+    display: none;
+  }
 }

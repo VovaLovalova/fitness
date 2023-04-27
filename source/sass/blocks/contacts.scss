@@ -27,4 +27,8 @@
 }
 
 
-@media (max-width: $vp-mobile) {}
+@media (max-width: $vp-mobile) {
+  .contacts__container {
+    min-width: 320px;
+  }
+}

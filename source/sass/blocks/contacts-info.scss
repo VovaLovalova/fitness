@@ -16,7 +16,6 @@
   background-color: #74819c;
 }
 
-
 .contacts-info h2 {
   font-family: $ff-alumni;
   font-weight: 600;
@@ -94,4 +93,26 @@
 }
 
 
-@media (max-width: $vp-mobile) {}
+@media (max-width: $vp-mobile) {
+  .contacts-info {
+    min-height: 324px;
+    padding: 70px 15px;
+  }
+
+  .contacts-info h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .contacts-info::after {
+    display: none;
+  }
+
+  .contacts-info ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+}
