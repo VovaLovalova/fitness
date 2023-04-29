@@ -68,7 +68,7 @@
 @media (max-width: $vp-tablet) {
   .contacts-info {
     min-height: 324px;
-    padding: 70px 163px 70px 133px;
+    padding: 61px 98px 63px 133px;
   }
 
   .contacts-info h2 {
@@ -76,12 +76,19 @@
     line-height: 50px;
     letter-spacing: 0.03em;
     color: $color-sapphire;
-    margin: 0 0 37px;
+    margin: 0 0 32px;
+  }
+
+  .contacts-info ul {
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
   }
 
   .contacts-info span {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 6px;
   }
 
   .contacts-info address,
@@ -89,6 +96,12 @@
   .contacts-info a {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  .contacts-info::after {
+    top: 151px;
+    left: 399px;
+    height: 129px;
   }
 }
 

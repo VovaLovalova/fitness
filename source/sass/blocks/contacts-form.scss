@@ -80,12 +80,13 @@ form input::placeholder {
 @media (max-width: $vp-tablet) {
   .contacts form {
     min-height: 324px;
-    padding: 70px 163px 70px 133px;
+    padding: 62px 163px 70px 133px;
   }
 
   form h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-bottom: 37px;
   }
 
   .contacts-form__inputs {

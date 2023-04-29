@@ -163,12 +163,14 @@
 @media (max-width: $vp-tablet) {
   .promotion__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 95px 45px 50px;
   }
 
   .promotion h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-left: -8px;
+    margin-bottom: 40px;
   }
 
   .promotion__wrapper {

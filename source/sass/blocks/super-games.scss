@@ -110,23 +110,33 @@
   .super-games h2 {
     font-size: 48px;
     line-height: 46px;
-    margin: 0 0 30px;
+    margin: 0 0 10px 8px;
   }
 
   .super-games p {
     font-size: 12px;
     line-height: 18px;
-    margin: 0 0 10px;
+    margin: 0 0 29px;
   }
 
   .super-games h4 {
     font-size: 12px;
     line-height: 18px;
+    margin-bottom: 1px;
+  }
+
+  .super-games__date {
+    margin-bottom: 2px;
+  }
+
+  .super-games__date-text {
+    gap: 4px;
+    width: 42px;
   }
 
   .super-games strong {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 29px;
   }
 
   .super-games span {
@@ -137,7 +147,7 @@
   .super-games a {
     font-size: 10px;
     line-height: 12px;
-    padding: 16px 47px;
+    padding: 12px 47px;
   }
 
   .super-games__info {
@@ -151,8 +161,8 @@
   }
 
   .super-games__details {
-    top: 30px;
-    left: 187px;
+    top: 47px;
+    left: 191px;
   }
 }
 

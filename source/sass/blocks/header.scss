@@ -139,8 +139,9 @@
   .header__wrapper {
     width: 100%;
     display: flex;
-    justify-content: center;
-    column-gap: 4%;
+    justify-content: space-between;
+    column-gap: 0;
+    padding-left: 28px;
   }
 
   .header__container picture {
@@ -148,7 +149,7 @@
   }
 
   .header__title {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
   .header__title svg {
@@ -158,32 +159,37 @@
 
   .header__title span {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 20px;
     letter-spacing: 0.02em;
   }
 
   .header__info {
     position: static;
+    margin-right: 4%;
   }
 
   .header__info h1 {
-    font-size: 72px;
+    font-size: 74px;
     line-height: 86px;
+    text-transform: none;
+    margin-top: 5px;
+    margin-bottom: 36px;
+    letter-spacing: 0.03em;
   }
 
   .header__info span {
-    font-size: 34px;
-    margin: 0;
+    font-size: 30px;
+    margin: 52px 8px 0 0;
   }
 
   .header__info ul {
-    top: 228px;
-    left: 26px;
+    top: 268px;
+    left: 45px;
   }
 
   .header__info a {
     padding: 20px 28px;
-    width: 183px;
+    width: 188px;
   }
 }
 

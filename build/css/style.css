@@ -2173,7 +2173,7 @@ button,
 .coaches__swiper-button-prev,
 .coaches__swiper-button-next {
   position: absolute;
-  top: 44%;
+  top: 43%;
   width: 27px;
   height: 51px;
   background-color: transparent;
@@ -2202,11 +2202,11 @@ button,
 }
 
 .coaches__swiper-button-prev {
-  left: 47px;
+  left: 42px;
 }
 
 .coaches__swiper-button-next {
-  right: 47px;
+  right: 42px;
 }
 
 .coaches__card-wrapper {
@@ -2793,6 +2793,7 @@ button,
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
+  overflow-y: auto;
 }
 
 .feedback-card img {
@@ -3202,12 +3203,13 @@ form input::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-column-gap: 4%;
-    -moz-column-gap: 4%;
-    column-gap: 4%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    padding-left: 28px;
   }
 
   .header__container picture {
@@ -3215,7 +3217,7 @@ form input::placeholder {
   }
 
   .header__title {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
   .header__title svg {
@@ -3225,32 +3227,37 @@ form input::placeholder {
 
   .header__title span {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 20px;
     letter-spacing: 0.02em;
   }
 
   .header__info {
     position: static;
+    margin-right: 4%;
   }
 
   .header__info h1 {
-    font-size: 72px;
+    font-size: 74px;
     line-height: 86px;
+    text-transform: none;
+    margin-top: 5px;
+    margin-bottom: 36px;
+    letter-spacing: 0.03em;
   }
 
   .header__info span {
-    font-size: 34px;
-    margin: 0;
+    font-size: 30px;
+    margin: 52px 8px 0 0;
   }
 
   .header__info ul {
-    top: 228px;
-    left: 26px;
+    top: 268px;
+    left: 45px;
   }
 
   .header__info a {
     padding: 20px 28px;
-    width: 183px;
+    width: 188px;
   }
 
   .about {
@@ -3281,13 +3288,17 @@ form input::placeholder {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
   }
 
   .about h2 {
     font-size: 42px;
     line-height: 50px;
-    margin: 0;
+    margin: 0 0 0 -14px;
+  }
+
+  .about b {
+    margin: 0 0 34px;
   }
 
   .about__text--mobile-hidden {
@@ -3296,6 +3307,16 @@ form input::placeholder {
 
   .about p {
     text-align: center;
+    margin-left: -1px;
+  }
+
+  .about__image img {
+    width: 678px;
+    height: 345px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top right;
+    object-position: top right;
   }
 
   .about__video {
@@ -3325,6 +3346,15 @@ form input::placeholder {
   .memberships h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-left: -14px;
+    margin-bottom: 21px;
+  }
+
+  .memberships__period-list {
+    -webkit-column-gap: 55px;
+    -moz-column-gap: 55px;
+    column-gap: 55px;
+    margin-bottom: 44px;
   }
 
   .memberships__period-item {
@@ -3334,7 +3364,7 @@ form input::placeholder {
 
   .memberships__period-list::after {
     top: 38px;
-    width: 315px;
+    width: 334px;
   }
 
   .memberships__type-list {
@@ -3345,6 +3375,16 @@ form input::placeholder {
     margin-bottom: 0;
   }
 
+  .memberships picture {
+    right: 0;
+    bottom: -121px;
+  }
+
+  .memberships ing {
+    width: 338px;
+    height: auto;
+  }
+
   .memberships-card {
     min-width: 442px;
     min-height: 448px;
@@ -3352,29 +3392,39 @@ form input::placeholder {
 
   .promo__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 100px 45px 50px;
   }
 
   .super-games h2 {
     font-size: 48px;
     line-height: 46px;
-    margin: 0 0 30px;
+    margin: 0 0 10px 8px;
   }
 
   .super-games p {
     font-size: 12px;
     line-height: 18px;
-    margin: 0 0 10px;
+    margin: 0 0 29px;
   }
 
   .super-games h4 {
     font-size: 12px;
     line-height: 18px;
+    margin-bottom: 1px;
+  }
+
+  .super-games__date {
+    margin-bottom: 2px;
+  }
+
+  .super-games__date-text {
+    gap: 4px;
+    width: 42px;
   }
 
   .super-games strong {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 29px;
   }
 
   .super-games span {
@@ -3385,7 +3435,7 @@ form input::placeholder {
   .super-games a {
     font-size: 10px;
     line-height: 12px;
-    padding: 16px 47px;
+    padding: 12px 47px;
   }
 
   .super-games__info {
@@ -3399,13 +3449,13 @@ form input::placeholder {
   }
 
   .super-games__details {
-    top: 30px;
-    left: 187px;
+    top: 47px;
+    left: 191px;
   }
 
   .coaches__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 51px 45px 100px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -3418,23 +3468,51 @@ form input::placeholder {
   .coaches h2 {
     font-size: 42px;
     line-height: 50px;
+    margin: 0 0 32px -5px;
+  }
+
+  .coaches__swiper-button-prev,
+  .coaches__swiper-button-next {
+    top: 48%;
+  }
+
+  .coaches__swiper-button-prev {
+    left: 41px;
+  }
+
+  .coaches__swiper-button-next {
+    right: 41px;
+  }
+
+  .coaches__card-wrapper {
+    width: 269px;
+  }
+
+  .coaches-card {
+    padding: 51px 20px 52px 39px;
+  }
+
+  .coaches-card h4,
+  .coaches-card p {
+    margin-left: -18px;
   }
 
   .advantages__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 91px 45px;
   }
 
   .advantages h2 {
     font-size: 42px;
     line-height: 50px;
+    margin: 0 0 46px -20px;
   }
 
   .advantages__list {
-    -webkit-column-gap: 50px;
-    -moz-column-gap: 50px;
-    column-gap: 50px;
-    row-gap: 340px;
+    -webkit-column-gap: 31px;
+    -moz-column-gap: 31px;
+    column-gap: 31px;
+    row-gap: 329px;
   }
 
   .advantages__item--main::before,
@@ -3443,33 +3521,48 @@ form input::placeholder {
   }
 
   .advantages__item--main {
-    top: 134px;
+    top: 115px;
     left: calc(50% - 221px);
     width: 442px;
     height: 239px;
+    padding: 43px 34px;
   }
 
   .advantages__item b {
     font-size: 58px;
+    margin: 0 0 -6px;
   }
 
   .advantages__item--main b {
     font-size: 74px;
+    margin-bottom: 14px;
   }
 
   .advantages__item h4 {
     font-size: 20px;
     line-height: 30px;
+    margin: -4px 0 2px;
+  }
+
+  .advantages__item--main h4 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .advantages__item--main p {
+    max-width: 200px;
   }
 
   .promotion__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 95px 45px 50px;
   }
 
   .promotion h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-left: -8px;
+    margin-bottom: 40px;
   }
 
   .promotion__wrapper {
@@ -3521,28 +3614,36 @@ form input::placeholder {
 
   .feedback__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 42px 45px 100px;
   }
 
   .feedback h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-left: -4px;
+    margin-bottom: 40px;
   }
 
   .feedback__swiper {
     width: 566px;
   }
 
+  .feedback__swiper-button-prev,
+  .feedback__swiper-button-next {
+    top: 48%;
+  }
+
   .feedback__swiper-button-prev {
-    left: 35px;
+    left: 40px;
   }
 
   .feedback__swiper-button-next {
-    right: 35px;
+    right: 40px;
   }
 
   .feedback-card {
     width: 566px;
+    padding: 55px 65px;
   }
 
   .contacts {
@@ -3559,12 +3660,13 @@ form input::placeholder {
 
   .contacts form {
     min-height: 324px;
-    padding: 70px 163px 70px 133px;
+    padding: 62px 163px 70px 133px;
   }
 
   form h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-bottom: 37px;
   }
 
   .contacts-form__inputs {
@@ -3581,7 +3683,7 @@ form input::placeholder {
 
   .contacts-info {
     min-height: 324px;
-    padding: 70px 163px 70px 133px;
+    padding: 61px 98px 63px 133px;
   }
 
   .contacts-info h2 {
@@ -3589,12 +3691,22 @@ form input::placeholder {
     line-height: 50px;
     letter-spacing: 0.03em;
     color: #102654;
-    margin: 0 0 37px;
+    margin: 0 0 32px;
+  }
+
+  .contacts-info ul {
+    margin: 0;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 90px;
+    -moz-column-gap: 90px;
+    column-gap: 90px;
   }
 
   .contacts-info span {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 6px;
   }
 
   .contacts-info address,
@@ -3604,9 +3716,20 @@ form input::placeholder {
     line-height: 27px;
   }
 
+  .contacts-info::after {
+    top: 151px;
+    left: 399px;
+    height: 129px;
+  }
+
   .footer__container {
     min-width: 768px;
     padding: 47px 45px;
+  }
+
+  .footer__logo svg {
+    width: 82px;
+    height: 18px;
   }
 
   .navigation {

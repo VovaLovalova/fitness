@@ -73,24 +73,31 @@
 @media (max-width: $vp-tablet) {
   .feedback__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 42px 45px 100px;
   }
 
   .feedback h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-left: -4px;
+    margin-bottom: 40px;
   }
 
   .feedback__swiper {
     width: 566px;
   }
 
+  .feedback__swiper-button-prev,
+  .feedback__swiper-button-next {
+    top: 48%;
+  }
+
   .feedback__swiper-button-prev {
-    left: 35px;
+    left: 40px;
   }
 
   .feedback__swiper-button-next {
-    right: 35px;
+    right: 40px;
   }
 }
 

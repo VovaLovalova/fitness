@@ -73,6 +73,21 @@
   color: $color-default-white;
 }
 
+@media (max-width: $vp-tablet) {
+  .coaches__card-wrapper {
+    width: 269px;
+  }
+
+  .coaches-card {
+    padding: 51px 20px 52px 39px;
+  }
+
+  .coaches-card h4,
+  .coaches-card p {
+    margin-left: -18px;
+  }
+}
+
 @media (max-width: $vp-mobile) {
   .coaches-card {
     width: 226px;

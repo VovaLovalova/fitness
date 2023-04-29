@@ -40,7 +40,7 @@
 .coaches__swiper-button-prev,
 .coaches__swiper-button-next {
   position: absolute;
-  top: 44%;
+  top: 43%;
   width: 27px;
   height: 51px;
   background-color: transparent;
@@ -63,17 +63,17 @@
 }
 
 .coaches__swiper-button-prev {
-  left: 47px;
+  left: 42px;
 }
 
 .coaches__swiper-button-next {
-  right: 47px;
+  right: 42px;
 }
 
 @media (max-width: $vp-tablet) {
   .coaches__container {
     min-width: 768px;
-    padding: 100px 45px;
+    padding: 51px 45px 100px;
     align-items: center;
   }
 
@@ -84,6 +84,20 @@
   .coaches h2 {
     font-size: 42px;
     line-height: 50px;
+    margin: 0 0 32px -5px;
+  }
+
+  .coaches__swiper-button-prev,
+  .coaches__swiper-button-next {
+    top: 48%;
+  }
+
+  .coaches__swiper-button-prev {
+    left: 41px;
+  }
+
+  .coaches__swiper-button-next {
+    right: 41px;
   }
 }
 
