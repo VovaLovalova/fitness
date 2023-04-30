@@ -56,13 +56,13 @@
   row-gap: 13px;
 }
 
-.coaches-card__cover {
+.coaches__cover {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.coaches-card__cover span {
+.coaches__cover span {
   position: absolute;
   bottom: 22px;
   left: 69px;
@@ -100,12 +100,12 @@
     margin-left: 0;
   }
 
-  .coaches-card__cover {
+  .coaches__cover {
     width: 226px;
     height: 274px;
   }
 
-  .coaches-card__cover img {
+  .coaches__cover img {
     width: 226px;
     height: 274px;
   }

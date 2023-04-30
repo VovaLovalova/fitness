@@ -2279,13 +2279,13 @@ button,
   row-gap: 13px;
 }
 
-.coaches-card__cover {
+.coaches__cover {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.coaches-card__cover span {
+.coaches__cover span {
   position: absolute;
   bottom: 22px;
   left: 69px;
@@ -3380,7 +3380,7 @@ form input::placeholder {
     bottom: -121px;
   }
 
-  .memberships ing {
+  .memberships img {
     width: 338px;
     height: auto;
   }
@@ -3821,16 +3821,12 @@ form input::placeholder {
   }
 
   .about__image {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     height: 313px;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: right;
     object-position: right;
-  }
-
-  .about__image {
-    margin-bottom: 40px;
   }
 
   .about__image img {
@@ -4003,12 +3999,12 @@ form input::placeholder {
     margin-left: 0;
   }
 
-  .coaches-card__cover {
+  .coaches__cover {
     width: 226px;
     height: 274px;
   }
 
-  .coaches-card__cover img {
+  .coaches__cover img {
     width: 226px;
     height: 274px;
   }
@@ -4096,6 +4092,7 @@ form input::placeholder {
   }
 
   .promotion__wrapper {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
