@@ -219,9 +219,22 @@
     letter-spacing: 0.02em;
   }
 
+  .header__info {
+    margin: 0;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+
+  .header__info h1 {
+    margin: 0 0 23px 0
+  }
+
   .header__info span {
-    font-size: 28px;
+    font-size: 23px;
     line-height: 34px;
+    margin: 47px 6px 11px 0;
   }
 
   .header__info a {
@@ -231,7 +244,7 @@
   }
 
   .header__info ul {
-    top: 186px;
-    left: 10px;
+    top: 233px;
+    left: 14px;
   }
 }

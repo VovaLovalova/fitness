@@ -109,6 +109,11 @@
     width: 100%;
     min-width: 290px;
     min-height: 384px;
+    padding: 44px 34px 30px;
+  }
+
+  .memberships-card h4 {
+    margin-bottom: 54px;
   }
 
   .memberships-card h3 {
@@ -125,5 +130,14 @@
     font-size: 80px;
     line-height: 120px;
     top: -44px;
+  }
+
+  .memberships-card__price {
+    margin-bottom: 30px;
+  }
+
+  .memberships-card svg {
+    width: 24px;
+    height: 33px;
   }
 }

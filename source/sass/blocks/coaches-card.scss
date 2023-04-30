@@ -92,7 +92,12 @@
   .coaches-card {
     width: 226px;
     height: 274px;
-    padding: 34px 20px;
+    padding: 42px 18px;
+  }
+
+  .coaches-card h4,
+  .coaches-card p {
+    margin-left: 0;
   }
 
   .coaches-card__cover {

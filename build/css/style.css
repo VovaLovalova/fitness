@@ -3762,9 +3762,22 @@ form input::placeholder {
     letter-spacing: 0.02em;
   }
 
+  .header__info {
+    margin: 0;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+
+  .header__info h1 {
+    margin: 0 0 23px 0;
+  }
+
   .header__info span {
-    font-size: 28px;
+    font-size: 23px;
     line-height: 34px;
+    margin: 47px 6px 11px 0;
   }
 
   .header__info a {
@@ -3774,18 +3787,37 @@ form input::placeholder {
   }
 
   .header__info ul {
-    top: 186px;
-    left: 10px;
+    top: 233px;
+    left: 14px;
   }
 
   .about__container {
     min-width: 320px;
-    padding: 70px 0 40px;
+    padding: 65px 0 69px;
+  }
+
+  .about__info {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 33px;
   }
 
   .about h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .about p {
+    text-align: start;
+  }
+
+  .about b {
+    margin-bottom: 24px;
   }
 
   .about__image {
@@ -3795,6 +3827,15 @@ form input::placeholder {
     object-fit: cover;
     -o-object-position: right;
     object-position: right;
+  }
+
+  .about__image {
+    margin-bottom: 40px;
+  }
+
+  .about__image img {
+    width: 320px;
+    height: 313px;
   }
 
   .about__video {
@@ -3812,21 +3853,30 @@ form input::placeholder {
 
   .memberships__container {
     min-width: 320px;
-    padding: 70px 15px;
+    padding: 65px 15px 70px;
   }
 
   .memberships h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 20px;
+  }
+
+  .memberships__period-list {
+    -webkit-column-gap: 46px;
+    -moz-column-gap: 46px;
+    column-gap: 46px;
+    margin-bottom: 35px;
   }
 
   .memberships__period-item {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 13px;
   }
 
   .memberships__period-list::after {
-    top: 35px;
+    top: 37px;
     width: 290px;
   }
 
@@ -3834,10 +3884,19 @@ form input::placeholder {
     display: none;
   }
 
+  .memberships__type-list {
+    gap: 35px;
+  }
+
   .memberships-card {
     width: 100%;
     min-width: 290px;
     min-height: 384px;
+    padding: 44px 34px 30px;
+  }
+
+  .memberships-card h4 {
+    margin-bottom: 54px;
   }
 
   .memberships-card h3 {
@@ -3856,9 +3915,18 @@ form input::placeholder {
     top: -44px;
   }
 
+  .memberships-card__price {
+    margin-bottom: 30px;
+  }
+
+  .memberships-card svg {
+    width: 24px;
+    height: 33px;
+  }
+
   .promo__container {
     min-width: 320px;
-    padding: 70px 15px;
+    padding: 70px 15px 35px;
   }
 
   .super-games {
@@ -3889,7 +3957,7 @@ form input::placeholder {
 
   .coaches__container {
     min-width: 320px;
-    padding: 70px 15px;
+    padding: 28px 15px 52px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -3902,25 +3970,37 @@ form input::placeholder {
   .coaches h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 42px;
   }
 
   .coaches__swiper-button-prev {
-    left: 15px;
+    left: 6px;
   }
 
   .coaches__swiper-button-next {
-    right: 15px;
+    right: 6px;
   }
 
   .coaches__swiper-button-prev,
   .coaches__swiper-button-next {
-    top: 52%;
+    top: 49%;
+  }
+
+  .coaches__swiper-button-prev svg,
+  .coaches__swiper-button-next svg {
+    width: 10px;
+    height: 19px;
   }
 
   .coaches-card {
     width: 226px;
     height: 274px;
-    padding: 34px 20px;
+    padding: 42px 18px;
+  }
+
+  .coaches-card h4,
+  .coaches-card p {
+    margin-left: 0;
   }
 
   .coaches-card__cover {
@@ -3935,7 +4015,7 @@ form input::placeholder {
 
   .advantages__container {
     min-width: 320px;
-    padding: 70px 0;
+    padding: 62px 0 63px;
   }
 
   .advantages h2 {
@@ -3949,7 +4029,8 @@ form input::placeholder {
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
-    row-gap: 50px;
+    row-gap: 40px;
+    width: 100%;
   }
 
   .advantages__item {
@@ -3960,6 +4041,7 @@ form input::placeholder {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    gap: 13px;
   }
 
   .advantages__item--main {
@@ -3967,6 +4049,15 @@ form input::placeholder {
     min-height: 239px;
     height: auto;
     width: 100%;
+    padding: 48px 34px 40px;
+  }
+
+  .advantages__item--main b {
+    margin-bottom: -3px;
+  }
+
+  .advantages__item--main h4 {
+    margin-bottom: -3px;
   }
 
   .advantages__text {
@@ -3995,12 +4086,13 @@ form input::placeholder {
 
   .promotion__container {
     min-width: 320px;
-    padding: 70px 15px;
+    padding: 65px 15px 30px;
   }
 
   .promotion h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 42px;
   }
 
   .promotion__wrapper {
@@ -4046,6 +4138,14 @@ form input::placeholder {
     text-align: center;
   }
 
+  .promotion__1-info b {
+    margin-bottom: 21px;
+  }
+
+  .promotion__1-text p {
+    margin-bottom: 30px;
+  }
+
   .promotion__1 img {
     width: 290px;
     height: 299px;
@@ -4057,6 +4157,7 @@ form input::placeholder {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding: 40px 29px 39px;
   }
 
   .promotion__2 h4,
@@ -4068,12 +4169,13 @@ form input::placeholder {
 
   .feedback__container {
     min-width: 320px;
-    padding: 70px 15px;
+    padding: 34px 15px 70px;
   }
 
   .feedback h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 42px;
   }
 
   .feedback__swiper {
@@ -4081,16 +4183,35 @@ form input::placeholder {
     height: 335px;
   }
 
+  .feedback__swiper-button-prev,
+  .feedback__swiper-button-next {
+    top: 49%;
+  }
+
+  .feedback__swiper-button-prev {
+    left: 8px;
+  }
+
+  .feedback__swiper-button-next {
+    right: 8px;
+  }
+
+  .feedback__swiper-button-prev svg,
+  .feedback__swiper-button-next svg {
+    width: 10px;
+    height: 19px;
+  }
+
   .feedback-card {
     width: 226px;
     height: 335px;
     position: relative;
-    padding: 40px 25px;
+    padding: 48px 25px 24px;
   }
 
   .feedback-card h4 {
-    margin-left: 94px;
-    margin-bottom: 34px;
+    margin-left: 98px;
+    margin-bottom: 24px;
     line-height: 26px;
   }
 
@@ -4102,7 +4223,7 @@ form input::placeholder {
     height: 68px;
     width: 68px;
     position: absolute;
-    top: 40px;
+    top: 33px;
     left: 41px;
   }
 
@@ -4112,12 +4233,13 @@ form input::placeholder {
 
   .contacts form {
     min-height: 386px;
-    padding: 70px 15px;
+    padding: 64px 15px;
   }
 
   form h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 40px;
   }
 
   .contacts-form__inputs {
@@ -4131,9 +4253,7 @@ form input::placeholder {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-column-gap: 40px;
-    -moz-column-gap: 40px;
-    column-gap: 40px;
+    row-gap: 38px;
   }
 
   form button {
@@ -4142,12 +4262,13 @@ form input::placeholder {
 
   .contacts-info {
     min-height: 324px;
-    padding: 70px 15px;
+    padding: 65px 15px 62px;
   }
 
   .contacts-info h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 34px;
   }
 
   .contacts-info::after {
@@ -4155,22 +4276,21 @@ form input::placeholder {
   }
 
   .contacts-info ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    gap: 35px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 19px;
+  }
+
+  .contacts-info__schedule {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
 
   .footer__container {
     min-width: 320px;
-    padding: 50px 15px 52px;
+    min-height: 260px;
+    padding: 48px 15px 52px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4194,7 +4314,7 @@ form input::placeholder {
 
   .navigation li {
     width: 130px;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
   }
 
   .navigation__mobile-logo {

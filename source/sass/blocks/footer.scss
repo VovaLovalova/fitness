@@ -38,7 +38,8 @@
 @media (max-width: $vp-mobile) {
   .footer__container {
     min-width: 320px;
-    padding: 50px 15px 52px;
+    min-height: 260px;
+    padding: 48px 15px 52px;
     flex-direction: column;
   }
 

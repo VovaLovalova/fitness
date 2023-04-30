@@ -155,12 +155,29 @@
 @media (max-width: $vp-mobile) {
   .about__container {
     min-width: 320px;
-    padding: 70px 0 40px;
+    padding: 65px 0 69px;
+  }
+
+  .about__info {
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 33px;
   }
 
   .about h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .about p {
+    text-align: start;
+  }
+
+  .about b {
+    margin-bottom: 24px;
   }
 
   .about__image {
@@ -168,6 +185,15 @@
     height: 313px;
     object-fit: cover;
     object-position: right;
+  }
+
+  .about__image {
+    margin-bottom: 40px;
+  }
+
+  .about__image img {
+    width: 320px;
+    height: 313px;
   }
 
   .about__video {

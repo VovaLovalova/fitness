@@ -105,16 +105,36 @@
 @media (max-width: $vp-mobile) {
   .feedback__container {
     min-width: 320px;
-    padding: 70px 15px;
+    padding: 34px 15px 70px;
   }
 
   .feedback h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 42px;
   }
 
   .feedback__swiper {
     width: 226px;
     height: 335px;
+  }
+
+  .feedback__swiper-button-prev,
+  .feedback__swiper-button-next {
+    top: 49%;
+  }
+
+  .feedback__swiper-button-prev {
+    left: 8px;
+  }
+
+  .feedback__swiper-button-next {
+    right: 8px;
+  }
+
+  .feedback__swiper-button-prev svg,
+  .feedback__swiper-button-next svg {
+    width: 10px;
+    height: 19px;
   }
 }

@@ -211,12 +211,13 @@
 @media (max-width: $vp-mobile) {
   .promotion__container {
     min-width: 320px;
-    padding: 70px 15px;
+    padding: 65px 15px 30px;
   }
 
   .promotion h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 42px;
   }
 
   .promotion__wrapper {
@@ -248,6 +249,14 @@
     text-align: center;
   }
 
+  .promotion__1-info b {
+    margin-bottom: 21px;
+  }
+
+  .promotion__1-text p {
+    margin-bottom: 30px;
+  }
+
   .promotion__1 img {
     width: 290px;
     height: 299px;
@@ -257,6 +266,7 @@
   .promotion__3 {
     width: 290px;
     align-items: center;
+    padding: 40px 29px 39px;
   }
 
   .promotion__2 h4,
