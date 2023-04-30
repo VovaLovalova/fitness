@@ -177,6 +177,42 @@ window.addEventListener('DOMContentLoaded', () => {
     playButton.addEventListener('keydown', onPlayButtonKeydown);
   }
 
+  //  МАСКА ДЛЯ ВВОДА НОМЕРА ТЕЛЕФОНА
+  let phoneInput = document.querySelectorAll('input[type=tel]');
+
+  if (phoneInput) {
+    let getInputNumbersValue = function (input) {
+      return input.value.replace(/\D/g, '');
+    };
+
+    let onPhoneInput = function (e) {
+      let input = e.target;
+      let inputNumbersValue = getInputNumbersValue(input);
+      let formatedInputValue = '';
+
+      if (!inputNumbersValue) {
+        input.value = '';
+      }
+
+      formatedInputValue = inputNumbersValue.substring(0, 16);
+
+      input.value = formatedInputValue;
+    };
+
+    let onPhonedelete = function (e) {
+      let input = e.target;
+      if (e.keyCode === 8 && getInputNumbersValue(input).length === 1) {
+        input.value = '';
+      }
+    };
+
+    for (let i = 0; i < phoneInput.length; i++) {
+      let input = phoneInput[i];
+      input.addEventListener('input', onPhoneInput);
+      input.addEventListener('keydown', onPhonedelete);
+    }
+  }
+
   // Utils
   // ---------------------------------
 

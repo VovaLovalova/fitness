@@ -2,9 +2,14 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preload" href="./fonts/alumni-sans-v16-cyrillic_latin-600.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" as="font" type="font/woff2">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -124,9 +129,20 @@
           </div>
 
           <picture class="about__image">
+
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="./img/tablet/gym-tablet.webp 1x, ./img/tablet/gym-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/mobile/gym-mobile.webp 1x, ./img/mobile/gym-mobile@2x.webp 2x">
             <source type="image/webp" srcset="./img/desktop/gym.webp 1x, ./img/desktop/gym@2x.webp 2x">
+
+            <source media="(max-width: 1365px)"
+              srcset="./img/tablet/gym-tablet.jpg 1x, ./img/tablet/gym-tablet@2x.jpg 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/mobile/gym-mobile.jpg 1x, ./img/mobile/gym-mobile@2x.jpg 2x">
             <img src="./img/desktop/gym.jpg" alt="Тренажерный зал" width="660" height="401"
               srcset="./img/desktop/gym@2x.jpg 2x">
+
           </picture>
 
           <div class="about__video" id="video">
@@ -298,6 +314,11 @@
             </div>
 
             <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/mobile/crossfit-mobile.webp 1x, ./img/mobile/crossfit-mobile@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="./img/mobile/crossfit-mobile.jpg 1x, ./img/mobile/crossfit-mobile@2x.jpg 2x">
+
               <source type="image/webp" srcset="./img/desktop/crossfit.webp 1x, ./img/desktop/crossfit@2x.webp 2x">
               <img src="./img/desktop/crossfit.jpg" alt="CrossFit" width="660" height="500"
                 srcset="./img/desktop/crossfit@2x.jpg 2x">
