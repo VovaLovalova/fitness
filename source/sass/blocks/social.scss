@@ -1,9 +1,14 @@
+.social {
+  max-width: 245px;
+}
+
 .social ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
   gap: 11px;
+  flex-wrap: wrap;
 }
 
 .social li {

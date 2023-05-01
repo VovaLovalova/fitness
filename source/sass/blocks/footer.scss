@@ -20,6 +20,10 @@
   border-radius: 4px;
 }
 
+.footer__logo {
+  margin-right: 30px;
+}
+
 @media (max-width: $vp-tablet) {
   .footer__container {
     min-width: 768px;

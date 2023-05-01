@@ -3068,6 +3068,10 @@ form input::placeholder {
   border-radius: 4px;
 }
 
+.footer__logo {
+  margin-right: 30px;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3075,9 +3079,13 @@ form input::placeholder {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 40px;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-right: 30px;
 }
 
 .navigation a {
@@ -3097,6 +3105,10 @@ form input::placeholder {
   display: none;
 }
 
+.social {
+  max-width: 245px;
+}
+
 .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3105,6 +3117,8 @@ form input::placeholder {
   margin: 0;
   padding: 0;
   gap: 11px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .social li {
@@ -3733,7 +3747,10 @@ form input::placeholder {
   }
 
   .navigation {
-    gap: 30px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 20px;
   }
 }
 

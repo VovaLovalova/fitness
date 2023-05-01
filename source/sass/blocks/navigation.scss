@@ -3,8 +3,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 20px;
   flex-wrap: wrap;
+  margin-right: 30px;
 }
 
 .navigation a {
@@ -26,7 +28,8 @@
 
 @media (max-width: $vp-tablet) {
   .navigation {
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 20px;
   }
 }
 
