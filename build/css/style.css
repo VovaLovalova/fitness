@@ -4215,6 +4215,7 @@ form input::placeholder {
     -ms-flex-align: center;
     align-items: center;
     width: 290px;
+    min-width: inherit;
     height: 598px;
   }
 
