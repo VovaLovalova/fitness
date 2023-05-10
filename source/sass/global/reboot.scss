@@ -17,6 +17,7 @@ html {
   line-height: 24px;
   color: $color-default-black;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

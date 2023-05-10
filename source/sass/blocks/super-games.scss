@@ -87,7 +87,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   display: block;
-  padding: 25px 108px;
+  padding: 25px;
+  text-align: center;
   border: 4px solid $color-default-white;
   user-select: none;
 }
@@ -104,6 +105,15 @@
 
 .super-games picture {
   background-color: $color-sapphire;
+}
+
+@media (max-width: $vp-desktop) {
+  .super-games img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: $vp-tablet) {

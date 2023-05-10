@@ -63,11 +63,15 @@
 }
 
 .feedback__swiper-button-prev {
-  left: 343px;
+  left: calc(50% - 342px);
 }
 
 .feedback__swiper-button-next {
-  right: 343px;
+  right: calc(50% - 342px);
+}
+
+@media (max-width: $vp-desktop) {
+
 }
 
 @media (max-width: $vp-tablet) {
@@ -93,11 +97,11 @@
   }
 
   .feedback__swiper-button-prev {
-    left: 40px;
+    left: calc(50% - 344px);
   }
 
   .feedback__swiper-button-next {
-    right: 40px;
+    right: calc(50% - 344px);
   }
 }
 

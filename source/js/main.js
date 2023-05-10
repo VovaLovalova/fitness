@@ -32,7 +32,11 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      1366: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1365: {
         slidesPerView: 4,
         spaceBetween: 40,
       },
@@ -87,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // КАРТОЧКИ АБОНЕМЕНТОВ
 
-  // табы
+  // ТАБЫ
 
   let membershipsPeriodList = document.querySelector('.memberships__period-list');
   let membershipsPeriodArray = membershipsPeriodList.querySelectorAll('li');
@@ -123,7 +127,21 @@ window.addEventListener('DOMContentLoaded', () => {
         showMembershipsTypeList();
       };
 
+      let onPeriodKeydown = function (e) {
+        if (e.keyCode === 13) {
+          for (let j = 0; membershipsPeriodArray.length > j; j++) {
+            if (i === j) {
+              membershipsPeriodArray[j].classList.add('memberships__period-item--active');
+            } else {
+              membershipsPeriodArray[j].classList.remove('memberships__period-item--active');
+            }
+          }
+          showMembershipsTypeList();
+        }
+      };
+
       membershipsPeriodArray[i].addEventListener('click', onPeriodClick);
+      membershipsPeriodArray[i].addEventListener('keydown', onPeriodKeydown);
     }
 
     // ТЕНИ ОТ ЦЕН
@@ -178,6 +196,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   //  МАСКА ДЛЯ ВВОДА НОМЕРА ТЕЛЕФОНА
+
   let phoneInput = document.querySelectorAll('input[type=tel]');
 
   if (phoneInput) {
@@ -194,7 +213,30 @@ window.addEventListener('DOMContentLoaded', () => {
         input.value = '';
       }
 
-      formatedInputValue = inputNumbersValue.substring(0, 16);
+      if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
+        // russian number
+        if (inputNumbersValue[0] === '9') {
+          inputNumbersValue = '7' + inputNumbersValue;
+        }
+        let firstSymbols = '+7(';
+        formatedInputValue = firstSymbols;
+
+        if (inputNumbersValue.length > 1) {
+          formatedInputValue += inputNumbersValue.substring(1, 4);
+        }
+        if (inputNumbersValue.length >= 5) {
+          formatedInputValue += ') ' + inputNumbersValue.substring(4, 7);
+        }
+        if (inputNumbersValue.length >= 8) {
+          formatedInputValue += '-' + inputNumbersValue.substring(7, 9);
+        }
+        if (inputNumbersValue.length >= 10) {
+          formatedInputValue += '-' + inputNumbersValue.substring(9, 11);
+        }
+      } else {
+        // not russian number
+        formatedInputValue = '+' + inputNumbersValue.substring(0, 16);
+      }
 
       input.value = formatedInputValue;
     };

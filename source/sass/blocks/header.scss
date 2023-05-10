@@ -121,6 +121,12 @@
   border-radius: 4px;
 }
 
+@media (max-width: $vp-desktop) {
+  .header__container picture {
+    top: 62px;
+  }
+}
+
 @media (max-width: $vp-tablet) {
   .header {
     min-height: 554px;

@@ -63,11 +63,25 @@
 }
 
 .coaches__swiper-button-prev {
-  left: 42px;
+  left: calc(50% - 642px);
 }
 
 .coaches__swiper-button-next {
-  right: 42px;
+  right: calc(50% - 642px);
+}
+
+@media (max-width: $vp-desktop) {
+  .coaches__swiper {
+    width: 920px;
+  }
+
+  .coaches__swiper-button-prev {
+    left: calc(50% - 540px);
+  }
+
+  .coaches__swiper-button-next {
+    right: calc(50% - 540px);
+  }
 }
 
 @media (max-width: $vp-tablet) {
@@ -84,7 +98,7 @@
   .coaches h2 {
     font-size: 42px;
     line-height: 50px;
-    margin: 0 0 32px -5px;
+    margin: 0 0 31px -5px;
   }
 
   .coaches__swiper-button-prev,
@@ -93,11 +107,11 @@
   }
 
   .coaches__swiper-button-prev {
-    left: 41px;
+    left: calc(50% - 344px);
   }
 
   .coaches__swiper-button-next {
-    right: 41px;
+    right: calc(50% - 344px);
   }
 }
 

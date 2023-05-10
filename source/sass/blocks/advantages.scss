@@ -142,6 +142,15 @@
   text-align: center;
 }
 
+@media (max-width: $vp-desktop) {
+  .advantages__container {
+    padding: 97px 90px 109px;
+  }
+
+  .advantages__item--main {
+    left: calc(50% - 240px / 2);
+  }
+}
 
 @media (max-width: $vp-tablet) {
   .advantages__container {
