@@ -3434,6 +3434,7 @@ form input::placeholder {
   }
 
   .memberships__type-list {
+    width: 100%;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -3452,6 +3453,7 @@ form input::placeholder {
   }
 
   .memberships-card {
+    width: 100%;
     min-width: 442px;
     min-height: 448px;
   }
@@ -3459,6 +3461,10 @@ form input::placeholder {
   .promo__container {
     min-width: 768px;
     padding: 100px 45px 50px;
+  }
+
+  .super-games {
+    width: 100%;
   }
 
   .super-games h2 {
@@ -3505,18 +3511,22 @@ form input::placeholder {
   }
 
   .super-games__info {
-    width: 292px;
+    width: 43%;
     height: 292px;
     padding: 51px 45px;
   }
 
   .super-games picture {
-    width: 386px;
+    width: 57%;
+  }
+
+  .super-games img {
+    height: 292px;
   }
 
   .super-games__details {
     top: 47px;
-    left: 191px;
+    left: calc(100% - 100px);
   }
 
   .coaches__container {
@@ -3630,6 +3640,7 @@ form input::placeholder {
   }
 
   .promotion__container {
+    width: 100%;
     min-width: 768px;
     padding: 95px 45px 50px;
   }
@@ -3642,6 +3653,7 @@ form input::placeholder {
   }
 
   .promotion__wrapper {
+    width: 100%;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 462px 211px;
@@ -3658,6 +3670,14 @@ form input::placeholder {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+  }
+
+  .promotion__1-info {
+    width: 42%;
+  }
+
+  .promotion__1 picture {
+    width: 58%;
   }
 
   .promotion__2 {
@@ -3680,12 +3700,14 @@ form input::placeholder {
 
   .promotion__2,
   .promotion__3 {
-    width: 324px;
+    width: 100%;
   }
 
   .promotion__1 img {
-    width: 398px;
+    width: 100%;
     height: 462px;
+    -o-object-position: top;
+    object-position: top;
   }
 
   .feedback__container {
@@ -3964,7 +3986,6 @@ form input::placeholder {
   }
 
   .memberships-card {
-    width: 100%;
     min-width: 290px;
     min-height: 384px;
     padding: 44px 34px 30px;
@@ -4049,11 +4070,11 @@ form input::placeholder {
   }
 
   .coaches__swiper-button-prev {
-    left: 6px;
+    left: calc(50% - 154px);
   }
 
   .coaches__swiper-button-next {
-    right: 6px;
+    right: calc(50% - 154px);
   }
 
   .coaches__swiper-button-prev,
@@ -4222,6 +4243,10 @@ form input::placeholder {
     margin-bottom: 30px;
   }
 
+  .promotion__1 picture {
+    width: 290px;
+  }
+
   .promotion__1 img {
     width: 290px;
     height: 299px;
@@ -4265,11 +4290,11 @@ form input::placeholder {
   }
 
   .feedback__swiper-button-prev {
-    left: 8px;
+    left: calc(50% - 154px);
   }
 
   .feedback__swiper-button-next {
-    right: 8px;
+    right: calc(50% - 154px);
   }
 
   .feedback__swiper-button-prev svg,
