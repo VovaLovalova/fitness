@@ -8,10 +8,15 @@
 }
 
 .contacts__container {
-  max-width: 1366px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.contact__form-container {
+  background-color: $color-sapphire;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: $vp-tablet) {

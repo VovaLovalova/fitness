@@ -1,12 +1,11 @@
 .feedback-card {
   width: 560px;
-  height: 242px;
+  min-height: 242px;
   background-color: $color-resolution-blue;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   padding: 53px 62px;
   display: flex;
   column-gap: 28px;
-  overflow-y: auto;
 }
 
 .feedback-card img {
@@ -43,7 +42,7 @@
 @media (max-width: $vp-mobile) {
   .feedback-card {
     width: 226px;
-    height: 335px;
+    min-height: 335px;
     position: relative;
     padding: 48px 25px 24px;
   }

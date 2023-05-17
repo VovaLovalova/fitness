@@ -34,7 +34,7 @@
 
 .feedback__swiper {
   width: 560px;
-  height: 242px;
+  min-height: 242px;
 }
 
 .feedback__swiper-button-prev,
@@ -68,10 +68,6 @@
 
 .feedback__swiper-button-next {
   right: calc(50% - 342px);
-}
-
-@media (max-width: $vp-desktop) {
-
 }
 
 @media (max-width: $vp-tablet) {
@@ -120,7 +116,7 @@
 
   .feedback__swiper {
     width: 226px;
-    height: 335px;
+    min-height: 335px;
   }
 
   .feedback__swiper-button-prev,

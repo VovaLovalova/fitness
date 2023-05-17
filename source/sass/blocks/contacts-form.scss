@@ -1,5 +1,5 @@
 .contacts form {
-  width: 100%;
+  width: 683px;
   min-height: 337px;
   background-color: $color-sapphire;
   padding: 64px 103px;
@@ -79,6 +79,7 @@ form input::placeholder {
 
 @media (max-width: $vp-tablet) {
   .contacts form {
+    width: 100%;
     min-height: 324px;
     padding: 62px 163px 70px 133px;
   }

@@ -196,12 +196,17 @@
     position: relative;
     bottom: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
+    min-width: 320px;
     height: auto;
   }
 
+  .about__video-cover {
+    width: 100%;
+  }
+
   .about__play-button {
-    top: 47px;
-    left: 124px;
+    top: calc(50% - 37px);
+    left: calc(50% - 36px);
   }
 }
