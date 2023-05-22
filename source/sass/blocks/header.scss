@@ -162,7 +162,7 @@
   .header__wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     column-gap: 0;
     padding-left: 28px;
   }
@@ -207,7 +207,7 @@
 
   .header__info ul {
     top: 186px;
-    left: 0;
+    left: calc(50% - 338px);
   }
 
   .header__info a {
@@ -239,6 +239,9 @@
   }
 
   .header__info {
+    width: 100%;
+    min-width: 290px;
+    max-width: 356px;
     margin: 0;
   }
 
@@ -263,7 +266,7 @@
   }
 
   .header__info ul {
-    top: 170px;
-    left: 0;
+    top: 169px;
+    left: calc(50% - 145px);
   }
 }

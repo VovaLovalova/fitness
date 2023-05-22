@@ -196,38 +196,28 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //  МАСКА ДЛЯ ВВОДА НОМЕРА ТЕЛЕФОНА
 
-  let phoneInput = document.querySelectorAll('input[type=tel]');
+  let phoneInputs = document.querySelectorAll('input[type=tel]');
 
-  if (phoneInput) {
-    let getInputNumbersValue = function (input) {
-      return input.value.replace(/\D/g, '');
-    };
-
+  if (phoneInputs && phoneInputs.length) {
     let onPhoneInput = function (e) {
       let input = e.target;
-      let inputNumbersValue = getInputNumbersValue(input);
-      let formatedInputValue = '';
 
-      if (!inputNumbersValue) {
-        input.value = '';
+      let validValue = '';
+      for (let i = 0; i < input.value.length; i++) {
+        const char = input.value[i];
+        if (char === '+' && i === 0) {
+          validValue = '+';
+        } else if (char.match(/[0-9]/g)) {
+          validValue += char;
+        }
       }
 
-      formatedInputValue = inputNumbersValue;
-
-      input.value = formatedInputValue;
+      input.value = validValue;
     };
 
-    let onPhonedelete = function (e) {
-      let input = e.target;
-      if (e.keyCode === 8 && getInputNumbersValue(input).length === 1) {
-        input.value = '';
-      }
-    };
-
-    for (let i = 0; i < phoneInput.length; i++) {
-      let input = phoneInput[i];
+    for (let i = 0; i < phoneInputs.length; i++) {
+      let input = phoneInputs[i];
       input.addEventListener('input', onPhoneInput);
-      input.addEventListener('keydown', onPhonedelete);
     }
   }
 

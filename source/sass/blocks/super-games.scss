@@ -105,6 +105,7 @@
 
 .super-games picture {
   background-color: $color-sapphire;
+  width: 660px;
 }
 
 @media (max-width: $vp-desktop) {
@@ -119,6 +120,7 @@
 @media (max-width: $vp-tablet) {
   .super-games {
     width: 100%;
+    justify-content: center;
   }
 
   .super-games h2 {
@@ -165,17 +167,23 @@
   }
 
   .super-games__info {
-    width: 43%;
-    height: 292px;
+    width: 100%;
+    min-height: 292px;
+    height: auto;
     padding: 51px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .super-games picture {
-    width: 57%;
+    min-width: 386px;
+    width: 100%;
   }
 
   .super-games img {
-    height: 292px;
+    width: 100%;
+    height: auto;
   }
 
   .super-games__details {
@@ -192,17 +200,20 @@
   }
 
   .super-games__info {
-    width: 290px;
+    width: 100%;
+    min-width: 290px;
   }
 
   .super-games picture {
-    width: 290px;
-    height: 292px;
+    width: 100%;
+    min-width: 290px;
+    height: auto;
   }
 
   .super-games img {
-    width: 290px;
-    height: 292px;
+    min-width: 290px;
+    width: 100%;
+    min-height: 292px;
     object-fit: cover;
   }
 }

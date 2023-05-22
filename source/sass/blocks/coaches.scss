@@ -7,9 +7,9 @@
 }
 
 .coaches__container {
-  max-width: 1366px;
   width: 100%;
-  min-height: 104px;
+  max-width: 1366px;
+  min-height: 300px;
   padding: 0 103px 140px 103px;
   display: flex;
   flex-direction: column;
@@ -26,15 +26,15 @@
   margin: 0 0 48px;
 }
 
+.coaches__swiper {
+  width: 1160px;
+  height: 294px;
+}
+
 .coaches__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.coaches__swiper {
-  width: 1160px;
-  height: 294px;
 }
 
 .coaches__swiper-button-prev,
@@ -87,7 +87,7 @@
 @media (max-width: $vp-tablet) {
   .coaches__container {
     min-width: 768px;
-    padding: 51px 45px 100px;
+    padding: 46px 45px 100px;
     align-items: center;
   }
 
@@ -119,12 +119,19 @@
 @media (max-width: $vp-mobile) {
   .coaches__container {
     min-width: 320px;
-    padding: 28px 15px 52px;
+    padding: 25px 15px 70px;
     align-items: center;
   }
 
   .coaches__swiper {
-    width: 226px;
+    width: 80%;
+    min-width: 226px;
+    height: auto;
+  }
+
+  .coaches__list {
+    width: 100%;
+    height: 100%;
   }
 
   .coaches h2 {
@@ -134,16 +141,16 @@
   }
 
   .coaches__swiper-button-prev {
-    left: calc(50% - 154px);
+    left: 6px;
   }
 
   .coaches__swiper-button-next {
-    right: calc(50% - 154px);
+    right: 6px;
   }
 
   .coaches__swiper-button-prev,
   .coaches__swiper-button-next {
-    top: 49%;
+    top: 50%;
   }
 
   .coaches__swiper-button-prev svg,

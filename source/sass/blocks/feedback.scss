@@ -115,7 +115,7 @@
   }
 
   .feedback__swiper {
-    width: 226px;
+    width: 80%;
     min-height: 335px;
   }
 
@@ -125,11 +125,11 @@
   }
 
   .feedback__swiper-button-prev {
-    left: calc(50% - 154px);
+    left: 6px;
   }
 
   .feedback__swiper-button-next {
-    right: calc(50% - 154px);
+    right: 6px;
   }
 
   .feedback__swiper-button-prev svg,
