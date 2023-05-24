@@ -70,6 +70,20 @@
   border-radius: 4px;
 }
 
+@media (max-width: $vp-desktop) {
+  .contacts-info {
+    padding: 56px 14px 26px 72px;
+  }
+
+  .contacts-info::after {
+    left: 280px;
+  }
+
+  .contacts-info ul {
+    column-gap: 80px;
+}
+}
+
 @media (max-width: $vp-tablet) {
   .contacts-info {
     min-height: 324px;

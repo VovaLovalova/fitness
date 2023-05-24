@@ -31,6 +31,8 @@
   column-gap: 20px;
   row-gap: 10px;
   flex-wrap: wrap;
+  position: absolute;
+  right: 104px;
 }
 
 .header__wrapper {
@@ -139,11 +141,16 @@
 
 @media (max-width: $vp-desktop) {
   .header__container picture {
-    top: -14px;
+    top: 16px;
   }
 
   .header__title-contacts {
     flex-direction: row;
+    position: static;
+  }
+
+  .header img {
+    width: 450px;
   }
 }
 

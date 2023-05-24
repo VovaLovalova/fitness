@@ -5,7 +5,6 @@
 
 .super-games__info {
   width: 500px;
-  height: 500px;
   background-color: $color-torch-red;
   padding: 85px 78px;
   position: relative;
@@ -106,6 +105,13 @@
 .super-games picture {
   background-color: $color-sapphire;
   width: 660px;
+}
+
+.super-games img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 @media (max-width: $vp-desktop) {
