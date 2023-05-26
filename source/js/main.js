@@ -16,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 4,
     spaceBetween: 40,
     loop: true,
+    calculateHeight: true,
+    autoHeight: true,
 
     // Navigation arrows
     navigation: {

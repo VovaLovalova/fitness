@@ -2,17 +2,6 @@
   position: relative;
 }
 
-.coaches__card-wrapper:hover .coaches-card,
-.coaches__card-wrapper:focus .coaches-card {
-  z-index: 2;
-  background-color: rgba(16, 38, 84, 0.89);
-}
-
-.coaches__card-wrapper:hover span,
-.coaches__card-wrapper:focus span {
-  display: none;
-}
-
 .coaches-card {
   width: 260px;
   height: 294px;
@@ -22,8 +11,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  position: absolute;
   overflow-y: auto;
+}
+
+.coaches__cover {
+  position: relative;
+  z-index: 3;
+}
+
+.coaches__cover span {
+  position: absolute;
+  bottom: 22px;
+  left: 69px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+}
+
+.coaches__card-wrapper:hover .coaches-card,
+.coaches__card-wrapper:focus .coaches-card {
+  z-index: 2;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.coaches__card-wrapper:hover .coaches__cover,
+.coaches__card-wrapper:focus .coaches__cover {
+  z-index: 0;
+}
+
+.coaches__card-wrapper:hover span,
+.coaches__card-wrapper:focus span {
+  display: none;
 }
 
 .coaches-card h4 {
@@ -54,23 +75,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 13px;
-}
-
-.coaches__cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.coaches__cover span {
-  position: absolute;
-  bottom: 22px;
-  left: 69px;
-  font-family: $ff-roboto;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  color: $color-default-white;
 }
 
 @media (max-width: $vp-tablet) {
