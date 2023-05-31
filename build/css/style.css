@@ -1882,7 +1882,7 @@ button,
 
 .memberships picture {
   position: absolute;
-  right: -9px;
+  right: 0;
   bottom: -176px;
   z-index: 0;
 }
@@ -3334,7 +3334,7 @@ form input::placeholder {
   }
 
   .contacts-info {
-    padding: 56px 14px 26px 72px;
+    padding: 56px 14px 26px 69px;
   }
 
   .contacts-info::after {
